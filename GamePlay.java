@@ -21,7 +21,7 @@ class GamePlay extends JFrame implements ItemListener, ActionListener {
     int count;//counts how many tiles are filled
     Checkbox c1, c2;//checkboxes for who starts first
     GamePlay() {
-        super("tic tac toe by Sumanth Reddy");
+        super("tic tac toe");
         //creating two checkboxes and adding them to frame
         CheckboxGroup cbg = new CheckboxGroup();
         c1 = new Checkbox("First move by computer", cbg, false);
@@ -596,6 +596,6 @@ class GamePlay extends JFrame implements ItemListener, ActionListener {
         for (int i = 0; i < 9; i++) {
             arr[i].setEnabled(false);
         }
-        text.setText("O wins");
+        text.setText("OÂ wins");
     }
 }
